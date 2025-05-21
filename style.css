@@ -1,0 +1,261 @@
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.main {
+    background: linear-gradient(to bottom right, #F2F2F2, #e9efc1);
+}
+
+.why {
+    background-image: url("image/navigatori.jpg");
+    background-size: cover;
+    max-width: 100%;
+    background-attachment: fixed;
+    background-position-x: center;
+}
+
+.main-image {
+    background-size: cover;
+    max-width: 100%;
+}
+
+.bg-image {
+    background-image: url("image/bg.png");
+    background-size: cover;
+    max-width: 100%;
+    height: 1000px;
+    background-attachment: fixed;
+    background-position-x: center;
+}
+
+.hr-nav {
+    position: fixed;
+    border: 1px solid red;
+}
+
+.ZhKa {
+    mix-blend-mode: overlay;
+}
+
+h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.forma {
+    background-image: url("image/oboi.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    border: 1px solid #6c757d;
+
+}
+
+.form-box {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    background: transparent;
+    border: 2px solid #6c757d;;
+    border-radius: 20px;
+    backdrop-filter: blur(25px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 300px;
+    border-bottom: 2px solid #6c757d;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #6c757d;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus~label, input:not(:placeholder-shown)~label {
+    top: -5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #6c757d;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #6c757d;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #6c757d;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forget label input {
+    margin-right: 3px;
+
+}
+
+.forget label a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+}
+
+.register {
+    font-size: .9em;
+    color: #6c757d;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: #6c757d;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+td {
+    height: 100px;
+    width: 100px;
+}
+
+.territory {
+    border: 1px solid black;
+}
+
+.road-y {
+    max-width: 85px;
+}
+
+.road-x {
+    height: 75px;
+}
+
+.podtable-td {
+    padding: 0;
+    margin: 0;
+}
+
+.podtable {
+    padding: 0;
+    margin: 0;
+}
+
+
+.podtable-tr {
+    max-height: 15px;
+}
+
+.podtable-tr>td {
+    height: 20px;
+}
+
+.storozhka {
+    background-image: url("image/storozhka.png");
+    transform: rotate(90deg);
+    width: 100px;
+}
+
+.circle {
+    background: #456BD9;
+    border: 0.1875em solid #0F1C3F;
+    border-radius: 50%;
+    box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+    height: 5em;
+    width: 5em;
+}
+
+.kvadrat {
+    min-width: 25px;
+    min-height: 25px;
+    border: 1px solid black;
+}
+
+.bor-red {
+    border: 1px solid red;
+}
+
+.bor-orange {
+    border: 1px solid orange;
+}
+
+.bor-green {
+    border: 1px solid green;
+}
+
+@media only screen and (max-width: 1200px) {
+    .circle-icon {
+        width: 0 !important;
+        height: 0 !important;
+        border-radius: none;
+        border-style: none !important;
+        background: none;
+        font-size: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    form > button {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .lol > img {
+        width: 100px;
+        height: 100px;
+    }
+    .nav-pills .nav-link {
+    width: 150px !important;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .image-new{
+        max-width: 100px;
+    }
+}
+
